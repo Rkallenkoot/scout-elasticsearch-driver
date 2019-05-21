@@ -38,5 +38,6 @@ class TypePayload extends IndexPayload
 
         $this->payload['type'] = $model->searchableAs();
         $this->protectedKeys[] = 'type';
+        $this->set('include_type_name', true);
     }
 }
